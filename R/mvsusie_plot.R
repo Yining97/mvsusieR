@@ -56,6 +56,7 @@
 #' @importFrom ggplot2 scale_x_discrete
 #' @importFrom ggplot2 scale_y_discrete
 #' @importFrom ggplot2 scale_color_manual
+#' @importFrom ggplot2 scale_x_continuous
 #' @importFrom ggplot2 scale_fill_manual
 #' @importFrom ggplot2 scale_size
 #' @importFrom ggplot2 guides

@@ -80,6 +80,8 @@ mvsusie_plot <-
            cs_plot = names(fit$sets$cs),
            add_cs = FALSE,
            conditional_effect = TRUE,
+           xlab = "SNV",
+           x_breaks = NULL,
            cs_colors = c(
              "#1f78b4", "#33a02c", "#e31a1c", "#ff7f00",
              "#6a3d9a", "#b15928", "#a6cee3", "#b2df8a", "#fb9a99",
@@ -258,8 +260,10 @@ mvsusie_plot <-
         size = 1.5
       ))) +
       labs(
-        x = sprintf("chromosome %d position (Mb)", chr),
+        x = xlab,
         y = "PIP", color = "CS"
+      ) +
+      scale_x_continuous(breaks = x_breaks
       ) +
       theme_cowplot(font_size = 9)
 

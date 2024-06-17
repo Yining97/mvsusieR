@@ -34,6 +34,10 @@
 #'   effect. If \code{FALSE}, plot the marginal effect.
 #'   \code{conditional_effect = TRUE} is recommended.
 #'
+#' @param xlab The label of x axis.
+#'
+#' @param x_breaks Adjust the tick marks on x axis.
+#'
 #' @param cs_colors The color palette for CSs.
 #'
 #' @return The output includes the PIP plot, effect plot, z-scores

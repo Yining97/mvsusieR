@@ -86,7 +86,7 @@ mvsusie_plot <-
            add_cs = FALSE,
            conditional_effect = TRUE,
            xlab = "SNV",
-           x_breaks = NULL,
+           x_breaks = seq(0, length(fit$variable_names), 200),
            cs_colors = c(
              "#1f78b4", "#33a02c", "#e31a1c", "#ff7f00",
              "#6a3d9a", "#b15928", "#a6cee3", "#b2df8a", "#fb9a99",

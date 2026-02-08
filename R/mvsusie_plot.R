@@ -309,7 +309,9 @@ mvsusie_plot <-
           panel.grid = element_line(
             color = "lightgray", size = 0.3,
             linetype = "dotted"
-          )
+          ),
+        legend.box.margin = margin(0, 0, 0, 0),
+        legend.margin = margin(0, 0, 0, 0)
         )
 
       # If requested, add colored dots to the top of the plot showing CS

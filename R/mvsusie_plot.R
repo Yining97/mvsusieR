@@ -294,7 +294,7 @@ mvsusie_plot <-
             seq(0, 1, length.out = 4)
           ))
         ) +
-        labs(x = "", y = "", fill = "Effect direction", size = "Effect size") +
+        labs(x = "", y = "", fill = "Direction of effect", size = "Effect size") +
         guides(
           fill = guide_legend(override.aes = list(size = 2)),
           size = guide_legend(override.aes = list(

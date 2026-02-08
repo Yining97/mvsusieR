@@ -277,6 +277,8 @@ mvsusie_plot <-
       effect_dat$effect_sign <- factor(effect_dat$effect > 0)
       effect_dat$effect_size <- abs(effect_dat$effect)
       levels(effect_dat$effect_sign) <- c("-1", "+1")
+      effect_dat$marker_cs <- factor(effect_dat$marker_cs, 
+                                     levels = unique(effect_dat$marker_cs[order(effect_dat$cs, effect_dat$pos)]))
       effect_plot <- ggplot(
         effect_dat,
         aes_string(
